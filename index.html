@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        background: #e0e7ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .card {
+        background: white;
+        width: 400px;
+        border-radius: 35px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .car-header img {
+        width: 100%;
+      }
+      .card-body {
+        padding: 20px;
+      }
+      .card-body h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .card-body p {
+        color: #6b7280;
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+      .annual-plan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 15px 0 15px;
+        background: #f3f4f6ac;
+        border-radius: 12px;
+      }
+      .annual-plan img{
+        width: 40px;
+      }
+      .plan-detail{
+        text-align: left;
+        margin-top: 25px;
+      }
+      .plan-detail strong{
+        font-size: 15px;
+      }
+      .plan-detail p{
+        font-size: 14px;
+        margin-top: 8px;
+        color: #6b7280;
+      }
+      .change{
+        color:  #6366f1;
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      .btn{
+        width: 100%;
+        border-radius: 10px;
+        background: #6366f1;
+        color: white;
+        border: none;
+        padding: 15px;
+        font-size: 17px;
+        margin-top: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      }
+      .cancel-order{
+        text-decoration: none;
+        display: block;
+        margin-top: 18px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        color: #6b7280;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <img src="./images/illustration-hero.svg" />
+      </div>
+      <div class="card-body">
+        <h2>Order Summary</h2>
+        <p>
+          You can now listen to millions of songs audiobook, and podcast on any
+          device anywhere you like!
+        </p>
+        <div class="annual-plan">
+          <img src="./images/icon-music.svg" alt="" />
+          <div class="plan-detail">
+            <strong>Anuual Plan</strong>
+            <p>$59.99/year</p>
+          </div>
+          <a href="#" class="change">Change</a>
+        </div>
+        <button class="btn">Procedd to Payment</button>
+        <a href="#" class="cancel-order">Cancel Order</a>
+      </div>
+    </div>
+  </body>
+</html>
